@@ -1,10 +1,32 @@
 Rails.application.routes.draw do
+  get 'pages/login'
+
+  get 'pages/signup'
+
+  get 'pages/profile'
+
+  get 'pages/list_spaces'
+
+  get 'pages/datesearch'
+
+  get 'pages/detail'
+
+  get 'pages/booking'
+
+  get 'pages/client_signup'
+
+  get 'pages/create_space'
+
+  get 'pages/payment'
+
+  root 'pages#home'
+
   resources :items
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-   root 'items#index'
+  # root 'items#index'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

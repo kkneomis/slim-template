@@ -13,11 +13,18 @@
 <%= render 'layouts/header' %>
 
 
-
-
 <div class="content">
   <%= yield %>
 </div>
+
+<!-- BEGIN INITIALIZATION-->
+<script>
+    Pleasure.init();
+    Layout.init();
+    FormsPickers.init();
+</script>
+<!-- END INITIALIZATION-->
+
 
 </body>
 </html>

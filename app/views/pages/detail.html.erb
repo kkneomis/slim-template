@@ -1,0 +1,89 @@
+<div class="page-header full-content">
+  <div class="row">
+    <div class="col-sm-6">
+      <h1>Calendar <small>short description</small></h1>
+    </div><!--.col-->
+    <div class="col-sm-6">
+      <ol class="breadcrumb">
+        <li><a href="#"><i class="ion-home"></i></a></li>
+        <li><a href="#">Pages</a></li>
+        <li><a href="#" class="active">Calendar</a></li>
+      </ol>
+    </div><!--.col-->
+  </div><!--.row-->
+</div><!--.page-header-->
+
+<div class="row">
+  <div class="col-md-12">
+    <div class="panel">
+      <div class="panel-heading">
+        <div class="panel-title"><h4>CALENDAR</h4></div>
+      </div><!--.panel-heading-->
+      <div class="panel-body">
+
+        <div class="row">
+          <div class="col-md-3">
+            <div id="external-events">
+              <div class="legend">Create Event</div>
+              <form action="#" id="create-event">
+                <div class="input-group">
+                  <div class="inputer">
+                    <div class="input-wrapper">
+                      <input id="event-title" type="text" class="form-control">
+                    </div>
+                  </div>
+                  <div class="input-group-btn">
+                    <button id="add-event" type="submit" class="btn btn-flat btn-default">Add</button>
+                  </div><!--.input-group-btn-->
+                </div><!--.input-group-->
+              </form>
+
+              <div class="legend">Draggable Events</div>
+              <div class="draggable-events">
+                <div class="fc-event"><span>Eat</span> <button type="button" class="close">&times;</button></div>
+                <div class="fc-event"><span>Pray</span> <button type="button" class="close">&times;</button></div>
+                <div class="fc-event"><span>Love</span> <button type="button" class="close">&times;</button></div>
+              </div><!--.draggable-events-->
+              <p>
+                <input type="checkbox" id="drop-remove" />
+                <label for="drop-remove">Remove After Drop</label>
+              </p>
+            </div><!--#external-events-->
+          </div><!--.col-md-3-->
+          <div class="col-md-9">
+            <div id="calendar"></div><!--#calendar-->
+          </div><!--.col-md-9-->
+        </div><!--.row-->
+
+      </div><!--.panel-body-->
+    </div><!--.panel-->
+  </div><!--.col-md-12-->
+</div><!--.row-->
+
+<div class="footer-links margin-top-40">
+  <div class="row no-gutters">
+    <div class="col-xs-6 bg-indigo">
+      <a href="user-login.html">
+        <span class="state">Pages</span>
+        <span>Login</span>
+        <span class="icon"><i class="ion-android-arrow-back"></i></span>
+      </a>
+    </div><!--.col-->
+    <div class="col-xs-6 bg-indigo">
+      <a href="pages-blog.html">
+        <span class="state">Pages</span>
+        <span>Blog</span>
+        <span class="icon"><i class="ion-android-arrow-forward"></i></span>
+      </a>
+    </div><!--.col-->
+  </div><!--.row-->
+</div><!--.footer-links-->
+
+
+<script>
+  $(document).ready(function () {
+    Pleasure.init();
+    Layout.init();
+    Calendar.init();
+  });
+</script>
