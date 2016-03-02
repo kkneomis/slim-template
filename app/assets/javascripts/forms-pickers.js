@@ -1,7 +1,7 @@
 var FormsPickers = {
 
 	colorPicker: function () {
-		$('.bs-colorpicker').colorpicker();
+		$('.bs-colorpicker').ColorPicker();
 	},
 
 	colorPickerRgba: function () {
