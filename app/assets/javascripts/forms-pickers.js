@@ -1,13 +1,13 @@
 var FormsPickers = {
 
 	colorPicker: function () {
-		$('.bs-colorpicker').ColorPicker();
+//		$('.bs-colorpicker').ColorPicker();
 	},
 
 	colorPickerRgba: function () {
-		$('.bs-colorpicker-rgba').colorpicker({
-			format: 'rgba'
-		});
+//		$('.bs-colorpicker-rgba').colorpicker({
+//			format: 'rgba'
+//		});
 	},
 
 	colorPickerWheel: function () {
