@@ -14966,7 +14966,7 @@ button.toast-close-button {
         display: block;
     }
     .bg-login.printable .login-screen {
-        background-color: transparent;
+        background-color: indigo;
         box-shadow: none;
         position: relative;
         top: auto;

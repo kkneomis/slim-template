@@ -3,19 +3,20 @@
 <head>
   <title>Myapp</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
   <link href='http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css' rel='stylesheet' type='text/css'>
 </head>
-<body>
+<body  <% if (current_page?(action: 'login') || current_page?(action: 'signup')) %> class="bg-login printable" <% end %>>
+<% if !(current_page?(action: 'login') || current_page?(action: 'signup')) %>
 <%= render 'layouts/header' %>
-
+<% end %>
 
 <div class="content">
   <%= yield %>
 </div>
 
 <!-- BEGIN INITIALIZATION-->
+<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
 <script>
     Pleasure.init();
     Layout.init();
