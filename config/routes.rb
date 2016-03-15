@@ -19,6 +19,12 @@ Rails.application.routes.draw do
 
   get 'pages/payment'
 
+  get 'pages/onsite_home'
+
+  get 'pages/onsite_spacedetail'
+
+  get 'pages/get_events'
+
   root 'pages#home'
 
   resources :items

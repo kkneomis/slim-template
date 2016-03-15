@@ -31,4 +31,19 @@ class PagesController < ApplicationController
 
   def home
   end
+
+  def onsite_home
+    render :layout => 'onsite'
+  end
+
+  def onsite_spacedetail
+    render :layout => 'onsite'
+  end
+
+  def get_events
+    respond_to do |format|
+      format.json {render json: {"get_events"}, layout: false }
+      format.html {render json: {}, layout: false }
+    end
+  end
 end

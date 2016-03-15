@@ -47,3 +47,6 @@ end
 
 gem 'ionicons-rails'
 gem "font-awesome-rails"
+gem 'gmaps4rails'
+gem 'underscore-rails'
+gem 'fullcalendar-rails'
