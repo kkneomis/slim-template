@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :testjsons
+
   get 'pages/login'
 
   get 'pages/signup'
@@ -13,6 +15,8 @@ Rails.application.routes.draw do
 
   get 'pages/booking'
 
+  get 'pages/booking_history'
+
   get 'pages/client_signup'
 
   get 'pages/create_space'
@@ -22,6 +26,12 @@ Rails.application.routes.draw do
   get 'pages/onsite_home'
 
   get 'pages/onsite_spacedetail'
+
+  get 'pages/onsite_createspace'
+
+  get 'pages/onsite_booking'
+
+  get 'pages/onsite_booking_history'
 
   get 'pages/get_events'
 

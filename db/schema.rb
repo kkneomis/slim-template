@@ -11,11 +11,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160228221421) do
+ActiveRecord::Schema.define(version: 20160315223423) do
 
   create_table "items", force: :cascade do |t|
     t.string   "name"
     t.integer  "value"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "testjsons", force: :cascade do |t|
+    t.string   "title"
+    t.datetime "start"
+    t.datetime "end"
+    t.string   "requestor"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

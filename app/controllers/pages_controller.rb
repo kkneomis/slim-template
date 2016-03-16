@@ -20,6 +20,9 @@ class PagesController < ApplicationController
   def booking
   end
 
+  def booking_history
+  end
+
   def client_signup
   end
 
@@ -40,9 +43,21 @@ class PagesController < ApplicationController
     render :layout => 'onsite'
   end
 
+  def onsite_createspace
+    render :layout => 'onsite'
+  end
+
+  def onsite_booking
+    render :layout => 'onsite'
+  end
+
+  def onsite_booking_history
+    render :layout => 'onsite'
+  end
+
   def get_events
     respond_to do |format|
-      format.json {render json: {"get_events"}, layout: false }
+      format.json {render json: {}, layout: false }
       format.html {render json: {}, layout: false }
     end
   end

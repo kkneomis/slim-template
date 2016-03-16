@@ -1,0 +1,33 @@
+<%= form_for(@testjson) do |f| %>
+  <% if @testjson.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@testjson.errors.count, "error") %> prohibited this testjson from being saved:</h2>
+
+      <ul>
+      <% @testjson.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :title %><br>
+    <%= f.text_field :title %>
+  </div>
+  <div class="field">
+    <%= f.label :start %><br>
+    <%= f.datetime_select :start %>
+  </div>
+  <div class="field">
+    <%= f.label :end %><br>
+    <%= f.datetime_select :end %>
+  </div>
+  <div class="field">
+    <%= f.label :requestor %><br>
+    <%= f.text_field :requestor %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

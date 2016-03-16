@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @testjson.title %>
+</p>
+
+<p>
+  <strong>Start:</strong>
+  <%= @testjson.start %>
+</p>
+
+<p>
+  <strong>End:</strong>
+  <%= @testjson.end %>
+</p>
+
+<p>
+  <strong>Requestor:</strong>
+  <%= @testjson.requestor %>
+</p>
+
+<%= link_to 'Edit', edit_testjson_path(@testjson) %> |
+<%= link_to 'Back', testjsons_path %>

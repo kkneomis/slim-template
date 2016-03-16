@@ -1,89 +1,137 @@
-<div class="page-header full-content">
-  <div class="row">
-    <div class="col-sm-6">
-      <h1>Calendar <small>short description</small></h1>
-    </div><!--.col-->
-    <div class="col-sm-6">
-      <ol class="breadcrumb">
-        <li><a href="#"><i class="ion-home"></i></a></li>
-        <li><a href="#">Pages</a></li>
-        <li><a href="#" class="active">Calendar</a></li>
-      </ol>
-    </div><!--.col-->
-  </div><!--.row-->
-</div><!--.page-header-->
+<style>
+  .sample-bg-image4:before {
+    background-image: url('/assets/room.jpg');
+  }
+</style>
+
+<%= render 'layouts/top' %>
 
 <div class="row">
   <div class="col-md-12">
     <div class="panel">
       <div class="panel-heading">
-        <div class="panel-title"><h4>CALENDAR</h4></div>
+        <div class="panel-title"><h4>Main Conference Room</h4> - <i class="ion-mic-b"></i> | <i class="ion-outlet"></i> | <i class="ion-wifi"></i></div>
       </div><!--.panel-heading-->
       <div class="panel-body">
 
-        <div class="row">
+        <div class="row example-row">
           <div class="col-md-3">
-            <div id="external-events">
-              <div class="legend">Create Event</div>
-              <form action="#" id="create-event">
-                <div class="input-group">
-                  <div class="inputer">
-                    <div class="input-wrapper">
-                      <input id="event-title" type="text" class="form-control">
-                    </div>
-                  </div>
-                  <div class="input-group-btn">
-                    <button id="add-event" type="submit" class="btn btn-flat btn-default">Add</button>
-                  </div><!--.input-group-btn-->
-                </div><!--.input-group-->
-              </form>
-
-              <div class="legend">Draggable Events</div>
-              <div class="draggable-events">
-                <div class="fc-event"><span>Eat</span> <button type="button" class="close">&times;</button></div>
-                <div class="fc-event"><span>Pray</span> <button type="button" class="close">&times;</button></div>
-                <div class="fc-event"><span>Love</span> <button type="button" class="close">&times;</button></div>
-              </div><!--.draggable-events-->
-              <p>
-                <input type="checkbox" id="drop-remove" />
-                <label for="drop-remove">Remove After Drop</label>
-              </p>
-            </div><!--#external-events-->
+            <p>11101 Georgia Ave #502<br />Wheaton, MD<br /><br />3rd Floor<br />202-555-1212<br /> </p>
           </div><!--.col-md-3-->
           <div class="col-md-9">
-            <div id="calendar"></div><!--#calendar-->
+
+            <ul class="nav nav-tabs" role="tablist">
+              <li class="active"><a href="#tab1_1" data-toggle="tab">Availability</a></li>
+              <li><a href="#tab1_2" data-toggle="tab">Bookings</a></li>
+              <li><a href="#tab1_3" data-toggle="tab">Photos</a></li>
+              <li><a href="#tab1_4" data-toggle="tab">Location</a></li>
+            </ul>
+
+            <div class="tab-content">
+              <div class="tab-pane active" id="tab1_1">
+                <div id="calendar"></div>
+              </div><!--.tab-pane-->
+              <div class="tab-pane" id="tab1_2">
+                <div class="row">
+                  <div class="col-md-12">
+
+                    <ul class="list-material">
+                      <li class="has-action-left has-action-right">
+                        <a href="#" class="visible">
+                          <div class="list-action-left">
+                            <i class="ion-calendar icon"></i>
+                          </div>
+                          <div class="list-content">
+                            <span class="title">Alton J Henley</span>
+                            <span class="caption">January 12, 2016 - 4pm to 6pm.<br />Main Conference Room</span>
+                          </div>
+                          <div class="list-action-right">
+                            <span class="top">2 hours</span>
+                            <i class="ion-android-done bottom"></i>
+                          </div>
+                        </a>
+                      </li>
+                      <li class="has-action-left has-action-right">
+                        <a href="#" class="visible">
+                          <div class="list-action-left">
+                            <i class="ion-calendar icon"></i>
+                          </div>
+                          <div class="list-content">
+                            <span class="title">Harry Perry</span>
+                            <span class="caption">Dynamically procrastinate B2C users after installed base benefits.</span>
+                          </div>
+                          <div class="list-action-right">
+                            <span class="top">2 hr</span>
+                            <i class="ion-android-done bottom"></i>
+                          </div>
+                        </a>
+                      </li>
+                      <li class="has-action-left has-action-right">
+                        <a href="#" class="visible">
+                          <div class="list-action-left">
+                            <i class="ion-calendar icon"></i>
+                          </div>
+                          <div class="list-content">
+                            <span class="title">Pari Subramanium</span>
+                            <span class="caption">Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits.</span>
+                          </div>
+                          <div class="list-action-right">
+                            <span class="top">6 hr</span>
+                            <i class="ion-android-volume-off bottom"></i>
+                          </div>
+                        </a>
+                      </li>
+                    </ul>
+                  </div><!--.col-->
+                </div>
+              </div><!--.tab-pane-->
+              <div class="tab-pane" id="tab1_3">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="card card-indigo card-image bg-image sample-bg-image4">
+
+                    </div><!--.card-->
+                  </div><!--.col-->
+                  <div class="col-md-6">
+                    <div class="card card-indigo card-image bg-image sample-bg-image4">
+
+                    </div><!--.card-->
+                  </div><!--.col-->
+                  <div class="col-md-6">
+                    <div class="card card-indigo card-image bg-image sample-bg-image4">
+
+                    </div><!--.card-->
+                  </div><!--.col-->
+                  <div class="col-md-6">
+                    <div class="card card-indigo card-image bg-image sample-bg-image4">
+
+                    </div><!--.card-->
+                  </div><!--.col-->
+                  <div class="col-md-6">
+                    <div class="card card-indigo card-image bg-image sample-bg-image4">
+
+                    </div><!--.card-->
+                  </div><!--.col-->
+                </div><!--.tab-pane-->
+              </div>
+              <div class="tab-pane" id="tab1_4">
+                <div class="panel">
+                  <div class="panel-heading">
+                    <div class="panel-title"><h4>BASIC</h4></div>
+                  </div><!--.panel-heading-->
+                  <div class="panel-body">
+                    <div style='width: 800px;'>
+                      <div id="map" style='width: 800px; height: 400px;'></div>
+                    </div>
+                  </div><!--.panel-body-->
+                </div><!--.panel-->
+              </div><!--.tab-pane-->
+            </div><!--.tab-content-->
+
           </div><!--.col-md-9-->
         </div><!--.row-->
-
-      </div><!--.panel-body-->
-    </div><!--.panel-->
-  </div><!--.col-md-12-->
+      </div>
+    </div><!--.panel-body-->
+  </div><!--.panel-->
+</div><!--.col-md-12-->
 </div><!--.row-->
-
-<div class="footer-links margin-top-40">
-  <div class="row no-gutters">
-    <div class="col-xs-6 bg-indigo">
-      <a href="user-login.html">
-        <span class="state">Pages</span>
-        <span>Login</span>
-        <span class="icon"><i class="ion-android-arrow-back"></i></span>
-      </a>
-    </div><!--.col-->
-    <div class="col-xs-6 bg-indigo">
-      <a href="pages-blog.html">
-        <span class="state">Pages</span>
-        <span>Blog</span>
-        <span class="icon"><i class="ion-android-arrow-forward"></i></span>
-      </a>
-    </div><!--.col-->
-  </div><!--.row-->
-</div><!--.footer-links-->
-
-
-<script>
-  $(document).ready(function () {
-    Pleasure.init();
-    Layout.init();
-    Calendar.init();
-  });
-</script>

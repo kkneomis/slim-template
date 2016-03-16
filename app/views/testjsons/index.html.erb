@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Testjsons</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Start</th>
+      <th>End</th>
+      <th>Requestor</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @testjsons.each do |testjson| %>
+      <tr>
+        <td><%= testjson.title %></td>
+        <td><%= testjson.start %></td>
+        <td><%= testjson.end %></td>
+        <td><%= testjson.requestor %></td>
+        <td><%= link_to 'Show', testjson %></td>
+        <td><%= link_to 'Edit', edit_testjson_path(testjson) %></td>
+        <td><%= link_to 'Destroy', testjson, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Testjson', new_testjson_path %>
